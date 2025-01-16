@@ -1,0 +1,38 @@
+<p>JoJo's Roster</p>
+<div class="characters-container">
+  <div class="pointing-image">
+    <h2>Click + Drag the center image to the left to see more!</h2>
+    <img class="left-pointing-josuke"src="../../assets/misc/josuke_point.png" alt="">
+    <h2>Try resizing the page if dragging does not work (Ctrl + scrollwheel)</h2>
+  </div>
+  <swiper-container>
+  @if(characterInfoObtained){
+    @for(character of infoArray; track character; let i = $index){
+      <swiper-slide effect="cards" grab-cursor="true">
+        <h1>{{character.name}}</h1>
+        <img class="character-image" src={{imgUrls[i]}}
+         alt="Image of Jojos character"> 
+         <mat-form-field>
+          <mat-label>Character Description</mat-label>
+          <mat-select>
+            <mat-option value="one">
+              <ul>
+                <li>Japanese Name - {{character.japaneseName}}</li>
+                <li>Nationality - {{character.nationality}}</li>
+                <li>Abiliies - {{character.abilities}}</li>
+                <li>Family - {{character.family}}</li>
+              </ul>
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </swiper-slide>
+    }
+  }
+  </swiper-container>
+  <div  class="pointing-image">
+    <img src="../../assets/misc/josuke_point.png" alt="">
+
+  </div>
+</div>
+<div id="cursor" class="cursor" [style.top]="top" [style.left]="left" >
+  <img class="cursor-img" src="../../assets/cursor/jojos_2.png" alt=""></div>

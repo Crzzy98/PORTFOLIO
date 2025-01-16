@@ -1,0 +1,28 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar appears above other content */
+    cursor:none;
+}
+
+.site-container {
+    padding-top: 60px; /* Adjust the value based on the height of your navbar */
+}
+#cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /* cursor: url("../../assets/cursor/str_plat_2.png"), auto; */
+}
+.cursor-img {
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    /* cursor: url("../../assets/cursor/j_cursor.png"); */
+}

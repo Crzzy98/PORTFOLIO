@@ -1,0 +1,108 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+  font-family: animeace;
+  src: url('assets/fonts/Comic-strip.ttf') format('truetype')
+}
+@font-face{
+  font-family: homepage;
+  src: url('assets/fonts/Extraornamentalno2-voRy.ttf') format('truetype')
+
+}
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    cursor: none;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* This ensures the body takes up the full viewport height */
+    margin: 0;
+    /* Removes default body margin */
+    background-color: black;
+}
+
+
+/* FunkyText style */
+.FunkyText {
+    font-size: 24px;
+    color: purple;
+    text-align: center;
+    font-family: 'Monoton', cursive;
+  }
+  
+  /* RetroVibes style */
+  .RetroVibes {
+    font-size: 20px;
+    color: teal;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+  }
+  
+  /* GalacticGlow style */
+  .GalacticGlow {
+    font-size: 22px;
+    color: navy;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  /* NeonDreams style */
+  .NeonDreams {
+    font-size: 18px;
+    color: magenta;
+    text-align: center;
+    font-family: 'Bungee', cursive;
+  }
+  
+  /* EnchantedForest style */
+  .EnchantedForest {
+    font-size: 26px;
+    color: forestgreen;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+  }
+  
+  /* CyberPunked style */
+  .CyberPunked {
+    font-size: 28px;
+    color: #ff00ff; /* Neon pink */
+    text-align: center;
+    font-family: 'VT323', monospace;
+  }
+  
+  /* MysticalMist style */
+  .MysticalMist {
+    font-size: 25px;
+    color: darkslateblue;
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  /* CosmicWaves style */
+  .CosmicWaves {
+    font-size: 23px;
+    color: darkorchid;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  /* ElectricElegance style */
+  .ElectricElegance {
+    font-size: 21px;
+    color: #ffcc00; /* Electric yellow */
+    text-align: center;
+    font-family: 'Lobster', cursive;
+  }
+  
+  /* AuroraBorealis style */
+  .AuroraBorealis {
+    font-size: 19px;
+    color: midnightblue;
+    text-align: center;
+    font-family: 'Ruslan Display', cursive;
+  }

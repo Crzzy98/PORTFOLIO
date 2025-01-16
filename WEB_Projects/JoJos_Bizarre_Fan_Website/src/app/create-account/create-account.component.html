@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="create-container">
+      @if(!accountCreationSuccessful){
+          <h1>Create a New Account</h1>
+          <form [formGroup]="createAccountForm" (ngSubmit)="onSubmit()">
+              <mat-form-field>
+                  <mat-label for="newUsername"> Username </mat-label>
+                  <input matInput id="newUsername" type="text" formControlName="newUserName" />
+                  <br />
+                  @if (createAccountForm.get("newUserName")?.hasError("required")) {
+                      <mat-error class="error-text">Enter a new username</mat-error>
+                  }
+              </mat-form-field>
+              @if(usernameFoundByService){
+                  <mat-error class="error-text">Username already exists, try again</mat-error>
+              }
+              <br />
+              <br />
+              <mat-form-field>
+                  <mat-label for="password"> Password </mat-label>
+                  <input matInput type="password" formControlName="newPassword" />
+                  <br />
+                  @if (createAccountForm.get("newPassword")?.hasError("required")) {
+                      <mat-error class="error-text">Enter a new password </mat-error>
+                  }
+              </mat-form-field>
+              <br>
+              <br>
+              <mat-form-field>
+                  <mat-label for="confirmedPassword">Confirm Password </mat-label>
+                  <input matInput type="password" formControlName="confirmedPassword" />
+                  <br />
+                  @if (createAccountForm.get("confirmedPassword")?.hasError("required")) {
+                      <mat-error class="error-text">Re-enter your new password</mat-error>
+                  }
+              </mat-form-field>
+              @if(passwordsDontMatch){
+                  <mat-error class="error-text">Passwords Must Match<br>Please re-enter your password and try again</mat-error>
+              }
+              <br />
+              <br />
+              <button mat-raised-button type="submit" [disabled]="createAccountForm.invalid">SUBMIT</button> |
+              <button mat-raised-button type="reset" [disabled]="createAccountForm.invalid">RESET</button>
+              <br />
+          </form>
+      } @else {
+          <h1>Account Creation Successful!</h1>
+
+      }
+  </div>
+  <div id="background_image"class="background-image"></div>
+</div>
+<div id="cursor" class="cursor" [style.top]="top" [style.left]="left" >
+    <img class="cursor-img" src="../../assets/cursor/jojos_2.png" alt=""></div>

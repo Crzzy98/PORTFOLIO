@@ -1,0 +1,132 @@
+@if(this.loginService.loginAccepted){
+<!-- this.loginService.loginAccepted -->
+<div class="container"></div>
+<div class="navbar">
+  <ul>
+    <a routerLink="/home" class="button" >
+      <img class="nav-img" src="../../assets/misc/home_tab.png" alt="Tab for home page">
+    </a>
+    <br>
+    <a routerLink="/seasons" class="button">
+      <img class="nav-img" src="../../assets/misc/seasons_tab.png" alt="Tab for seasons page">
+    </a>
+    <div class="logo">
+      <img class="nav-logo" src="../../assets/logos/Jojos_logo_japanese.jpg">
+      <div class="wavy-text">
+        <div class="logo-text">
+          <div class="logo-letter" style="--i:1;">J</div>
+          <div class="logo-letter" style="--i:2;">o</div>
+          <div class="logo-letter" style="--i:3;">j</div>
+          <div class="logo-letter" style="--i:4;">o</div>
+          <div class="logo-letter" style="--i:5;">'</div>
+          <div class="logo-letter" style="--i:6;">s</div>
+          <div class="logo-letter" style="--i:7;">&nbsp;</div>
+          <div class="logo-letter" style="--i:8;">B</div>
+          <div class="logo-letter" style="--i:9;">i</div>
+          <div class="logo-letter" style="--i:10;">z</div>
+          <div class="logo-letter" style="--i:11;">a</div>
+          <div class="logo-letter" style="--i:12;">r</div>
+          <div class="logo-letter" style="--i:13;">r</div>
+          <div class="logo-letter" style="--i:14;">e</div>
+          <div class="logo-letter" style="--i:15;">&nbsp;</div>
+          <div class="logo-letter" style="--i:16;">A</div>
+          <div class="logo-letter" style="--i:17;">d</div>
+          <div class="logo-letter" style="--i:18;">v</div>
+          <div class="logo-letter" style="--i:19;">e</div>
+          <div class="logo-letter" style="--i:20;">n</div>
+          <div class="logo-letter" style="--i:21;">t</div>
+          <div class="logo-letter" style="--i:22;">u</div>
+          <div class="logo-letter" style="--i:23;">r</div>
+          <div class="logo-letter" style="--i:24;">e</div>
+        </div>
+        <div class="logo-text">
+          <div class="logo-letter" style="--i:25;">&nbsp;</div>
+          <div class="logo-letter" style="--i:26;">U</div>
+          <div class="logo-letter" style="--i:27;">b</div>
+          <div class="logo-letter" style="--i:28;">e</div>
+          <div class="logo-letter" style="--i:29;">r</div>
+          <div class="logo-letter" style="--i:30;">f</div>
+          <div class="logo-letter" style="--i:31;">a</div>
+          <div class="logo-letter" style="--i:32;">n</div>
+          <div class="logo-letter" style="--i:33;">&nbsp;</div>
+          <div class="logo-letter" style="--i:34;">P</div>
+          <div class="logo-letter" style="--i:35;">a</div>
+          <div class="logo-letter" style="--i:36;">g</div>
+          <div class="logo-letter" style="--i:37;">e</div>
+          <div class="logo-letter" style="--i:38;">!</div>
+        </div>
+        
+      </div>
+    </div>
+    <a routerLink="/scenes" class="button">
+      <img class="nav-img" src="../../assets/misc/scenes_tab.png" alt="Tab for scenes page">
+    </a>
+    <br>
+    <a routerLink="/characters" class="button">
+      <img class="nav-img" src="../../assets/misc/characters_tab_2.png" alt="Tab for characters page">
+    </a>
+  </ul>
+</div>
+<br>
+<div class="login-status" alt="Tab indicating the user is currently signed in">
+  <h4>Signed in</h4>
+  <img src="../../assets/misc/green_dot.png" alt="Green dot indicating user is signed in">
+</div>
+}@else{
+<div class="navbar">
+  <ul>
+    <div class="logo">
+      <div class="wavy-text">
+        <div class="logo-text">
+          <div class="logo-letter" style="--i:1;">J</div>
+          <div class="logo-letter" style="--i:2;">o</div>
+          <div class="logo-letter" style="--i:3;">j</div>
+          <div class="logo-letter" style="--i:4;">o</div>
+          <div class="logo-letter" style="--i:5;">'</div>
+          <div class="logo-letter" style="--i:6;">s</div>
+          <div class="logo-letter" style="--i:7;">&nbsp;</div>
+          <div class="logo-letter" style="--i:8;">B</div>
+          <div class="logo-letter" style="--i:9;">i</div>
+          <div class="logo-letter" style="--i:10;">z</div>
+          <div class="logo-letter" style="--i:11;">a</div>
+          <div class="logo-letter" style="--i:12;">r</div>
+          <div class="logo-letter" style="--i:13;">r</div>
+          <div class="logo-letter" style="--i:14;">e</div>
+          <div class="logo-letter" style="--i:15;">&nbsp;</div>
+          <div class="logo-letter" style="--i:16;">A</div>
+          <div class="logo-letter" style="--i:17;">d</div>
+          <div class="logo-letter" style="--i:18;">v</div>
+          <div class="logo-letter" style="--i:19;">e</div>
+          <div class="logo-letter" style="--i:20;">n</div>
+          <div class="logo-letter" style="--i:21;">t</div>
+          <div class="logo-letter" style="--i:22;">u</div>
+          <div class="logo-letter" style="--i:23;">r</div>
+          <div class="logo-letter" style="--i:24;">e</div>
+        </div>
+        <div class="logo-text">
+          <div class="logo-letter" style="--i:25;">&nbsp;</div>
+          <div class="logo-letter" style="--i:26;">U</div>
+          <div class="logo-letter" style="--i:27;">b</div>
+          <div class="logo-letter" style="--i:28;">e</div>
+          <div class="logo-letter" style="--i:29;">r</div>
+          <div class="logo-letter" style="--i:30;">f</div>
+          <div class="logo-letter" style="--i:31;">a</div>
+          <div class="logo-letter" style="--i:32;">n</div>
+          <div class="logo-letter" style="--i:33;">&nbsp;</div>
+          <div class="logo-letter" style="--i:34;">P</div>
+          <div class="logo-letter" style="--i:35;">a</div>
+          <div class="logo-letter" style="--i:36;">g</div>
+          <div class="logo-letter" style="--i:37;">e</div>
+          <div class="logo-letter" style="--i:38;">!</div>
+        </div>
+        
+      </div>
+      <br>
+      <img class="nav-logo" src="../../assets/logos/Jojos_logo_japanese.jpg">
+    </div>
+  </ul>
+</div>
+}
+
+
+

@@ -1,0 +1,94 @@
+.characters-container{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  width:100vw;
+  background-image: url("../../assets/misc/wp2200985-jojos-bizarre-adventure-wallpapers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  cursor: url("../../assets/cursor/str_plat_2.png"), auto;
+}
+
+.cursor-img {
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+pointer-events: none;
+}
+swiper-container {
+    height: 80vh;
+    margin: 0;
+    width:60vw;
+    background-color: black;
+}
+swiper-slide{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+mat-form-field{
+  width: 40vw;
+  height: 100px;
+ justify-content: center;
+ margin-left: 10vw;
+ font-size: 5em;
+}
+mat-label{
+  font-size: 3em;
+}
+.character-image {
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+    width: 25vw;
+    height:70vh
+  }
+  .left-pointing-josuke{
+    height:20vh;
+    justify-content: center;
+    transform: scaleX(-1);
+  }
+  .pointing-image{
+    justify-content: center;
+    align-content: center;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    width:400px;
+    background-color: rgba(0, 0, 255, 0.5); /* Blue color with 50% opacity */
+  }
+  img{
+    height:20vh;
+    justify-content: center;
+    
+  }
+  h1 {
+    text-align:center;
+    color: yellow;
+    font-size: 5em;
+  }
+  h2{
+    color: yellow;
+    font-size: 3em;
+  }
+  p {
+    font-size: 100px; /* Sets the text size to 200 pixels */
+    color: yellow; /* Sets the text color to yellow */
+    text-align: center; /* Centers the text horizontally */
+    font-family: 'Pacifico', cursive;
+}
+li{
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  display: flex;
+  line-height: 1.5em
+}
+

@@ -1,0 +1,259 @@
+/* Center all content within the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Adjust height as needed */
+    position: relative;
+    background-image: url("../../assets/misc/create_gif.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: homepage;
+}
+/* Change this image and modify for stand behavior */
+#cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    cursor: url("../../assets/cursor/str_plat_2.png"), auto;
+    pointer-events: none;
+
+}
+
+.cursor-img {
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+
+    }
+.create-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* Adjust height as needed */
+    position: relative;
+    font-family: homepage;
+    background-color: black;
+}
+/* Style error text in yellow */
+.error-text {
+    color: yellow;
+}
+
+form {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style all <p> elements in yellow and centered */
+p {
+    color: yellow;
+    text-align: center;
+}
+
+h1 {
+    color: yellow;
+    font-family: homepage;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 6em;
+    margin-bottom: 20vh;
+    padding-top:0;
+}
+
+button {
+    min-height: 2vh;
+}
+mat-form-field{
+    width: 15vw;
+    min-height: 150px;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+mat-label{
+    font-size: 3.5em;
+}
+
+mat-error{
+    margin-top:25px;
+    font-size: 3.5em;
+}
+button {
+    height: 100px;
+    width: 7vw;
+    margin-bottom: 2vh;
+    margin-left: 4.5vw;
+    font-size: 3em;
+}
+
+/* Style the background image */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('../../assets/character-images/jojos_ora_ora_web.gif'); */
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    /* Behind all content */
+    opacity: 0.5;
+    /* Adjust opacity as needed */
+
+
+    background-repeat: no-repeat;
+    /* Prevent the background from repeating */
+    animation: animateBackground 10s linear infinite;
+    /* Adjust animation duration as needed */
+}
+
+@media screen and (max-height:1720px){
+    p {
+        font-size: 1.5em;
+    }
+    h1 {
+        margin-bottom: 200px;
+        font-size: 4em;
+    }
+
+    mat-label{
+        font-size: 1em;
+    }
+    
+    mat-error{
+        font-size: 2em;
+    }
+    mat-form-field{
+        min-height: 80px;
+        font-size: 2em;
+
+    }
+    button {
+        height: 50px;
+        width: 7vw;
+        font-size: 2em;
+    }
+}
+@media screen and (max-height:1160px){
+    h1 {
+        margin-bottom: 85px;
+        font-size: 3em;
+    }
+
+    mat-label{
+        font-size: 1em;
+    }
+    
+    mat-error{
+        font-size: 2em;
+    }
+    mat-form-field{
+        min-height: 80px;
+        font-size: 2em;
+        margin-bottom: 5px;
+    }
+    button {
+        height: 50px;
+        width: 7vw;
+        font-size: 2em;
+    }
+}
+@media screen and (max-height:900px){
+    p {
+        font-size: .8em;
+    }
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 35px;
+        margin-left:10vw;
+    }
+    mat-label{
+        font-size: .5em;
+    }
+    
+    mat-error{
+        font-size: .8em;
+    }
+    mat-form-field{
+        width: 15vw;
+        min-height: 60px;
+        font-size: .8em;
+        margin-bottom: 1vh;
+    }
+    button {
+        height: 30px;
+        width: 7vw;
+        margin-bottom: 1vh;
+        margin-left: 4.5vw;
+        font-size: 1em;
+        margin-top: 0;
+    }
+}
+@media screen and (max-height:460px){
+    p {
+        font-size: .5em;
+    }
+    h1 {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+    mat-label{
+        font-size: .2em;
+    }
+    
+    mat-error{
+        font-size: .5em;
+    }
+    mat-form-field{
+        width: 15vw;
+        min-height: 45px;
+        margin-bottom: 2px;
+    }
+    button {
+        height: 20px;
+        width: 7vw;
+        margin-bottom: 0px;
+        margin-left: 4.5vw;
+        font-size: .8em;
+    }
+}
+@media screen and (max-height:640px){
+    p {
+        font-size: .5em;
+    }
+    h1 {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+    mat-label{
+        font-size: .2em;
+    }
+    
+    mat-error{
+        font-size: .5em;
+    }
+    mat-form-field{
+        width: 15vw;
+        height: 2px;
+        margin-bottom: 2px;
+    }
+    button {
+        height: 20px;
+        width: 7vw;
+        margin-bottom: 0px;
+        margin-left: 4.5vw;
+        font-size: .8em;
+    }
+}

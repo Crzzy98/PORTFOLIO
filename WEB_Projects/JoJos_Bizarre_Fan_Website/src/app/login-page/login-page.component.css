@@ -1,0 +1,249 @@
+/* Center all content within the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Adjust height as needed */
+    position: relative;
+    font-family: homepage;
+}
+#cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    cursor: url("../../assets/cursor/str_plat_2.png"), auto;
+    pointer-events: none;
+  }
+  
+  .cursor-img {
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+  }
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 30vw;
+    /* Adjust height as needed */
+    position: relative;
+    /* Ensure relative positioning for absolute children */
+    background-color: black;
+    /* background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7b3c9228-b2b9-409b-9ba3-966385b57bd6/ddf1gjo-44cdc3b4-4754-4677-b3ed-17c0f91e13ee.jpg/v1/fit/w_828,h_1472,q_70,strp/giorno_giovanna__jojo_s__phone_wallpaper_by_cdrwalls_ddf1gjo-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkyMCIsInBhdGgiOiJcL2ZcLzdiM2M5MjI4LWIyYjktNDA5Yi05YmEzLTk2NjM4NWI1N2JkNlwvZGRmMWdqby00NGNkYzNiNC00NzU0LTQ2NzctYjNlZC0xN2MwZjkxZTEzZWUuanBnIiwid2lkdGgiOiI8PTEwODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.dq5I8_A2mOoLn3YHef5Bs992rePNUMNM76cLNH2Lvn0'); */
+}
+/* Style error text in yellow */
+.error-text {
+    color: yellow;
+}
+
+form {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+
+/* Style all <p> elements in yellow and centered */
+p {
+    color: yellow;
+    text-align: center;
+    font-size: 3em;
+}
+
+h1 {
+    color: yellow;
+    font-family: homepage;
+    font-size:7em;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 80px;
+}
+
+mat-form-field{
+    width: 15vw;
+    min-height: 150px;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+mat-label{
+    font-size: 3.5em;
+}
+
+mat-error{
+    margin-top:25px;
+    font-size: 3.5em;
+}
+button {
+    height: 100px;
+    width: 7vw;
+    margin-bottom: 2vh;
+    margin-left: 4.5vw;
+    font-size: 3em;
+}
+
+
+/* Style the background image */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/character-images/jojos_ora_ora_web.gif');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    /* Behind all content */
+    opacity: 0.5;
+    /* Adjust opacity as needed */
+    padding-bottom: 20px;
+    background-repeat: no-repeat;
+    /* Prevent the background from repeating */
+    animation: animateBackground 10s linear infinite;
+    /* Adjust animation duration as needed */
+}
+
+@media screen and (max-width:2190px){
+
+    button {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width:1820px){
+    p {
+        font-size: 2em;
+    }
+    h1 {
+        font-size: 5em;
+    }
+    mat-label{
+        font-size: 2em;
+    }
+    
+    mat-error{
+        font-size: 2em;
+    }
+    
+}
+@media screen and (max-width: 1700px){
+    .login-container{
+        margin-left: 450px;
+    }
+}
+@media screen and (max-width:1260px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    button {
+        width: 8vw;
+        font-size: 1em;
+    }
+}
+
+/* Media Queries for height */
+@media screen and (max-height:1720px){
+    p {
+        font-size: 1.5em;
+    }
+    h1 {
+        margin-bottom: 0px;
+        font-size: 4em;
+    }
+
+    mat-label{
+        font-size: 1em;
+    }
+    
+    mat-error{
+        font-size: 2em;
+    }
+    mat-form-field{
+        min-height: 80px;
+        font-size: 2em;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    button {
+        height: 50px;
+        width: 7vw;
+        margin-bottom: 2vh;
+        margin-left: 4.5vw;
+        font-size: 2em;
+    }
+}
+@media screen and (max-height:1150px){
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-height:900px){
+    p {
+        font-size: .8em;
+    }
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        margin-left:10vw;
+    }
+    mat-label{
+        font-size: .5em;
+    }
+    
+    mat-error{
+        font-size: .8em;
+    }
+    mat-form-field{
+        width: 15vw;
+        min-height: 60px;
+        font-size: .8em;
+        margin-bottom: 1vh;
+    }
+    button {
+        height: 30px;
+        width: 7vw;
+        margin-bottom: 1vh;
+        margin-left: 4.5vw;
+        font-size: 1em;
+        margin-top: 0;
+    }
+}
+@media screen and (max-height:460px){
+    p {
+        font-size: .5em;
+    }
+    h1 {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+    mat-label{
+        font-size: .2em;
+    }
+    
+    mat-error{
+        font-size: .5em;
+    }
+    mat-form-field{
+        width: 15vw;
+        min-height: 45px;
+        margin-bottom: 2px;
+    }
+    button {
+        height: 20px;
+        width: 7vw;
+        margin-bottom: 0px;
+        margin-left: 4.5vw;
+        font-size: .8em;
+    }
+}

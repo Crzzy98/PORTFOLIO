@@ -1,0 +1,136 @@
+.background {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+    /* Set the height to match the viewport height */
+    z-index: -1;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+/* Change this image and modify for stand behavior */
+#cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    cursor: url("../../assets/cursor/str_plat_2.png"), auto;
+}
+
+.cursor-img {
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75vh;
+    height: 80vh;
+    color: orange;
+    font-family: homepage;
+    text-shadow:
+        -3px -3px 0 black,
+        3px -3px 0 black,
+        -3px 3px 0 black,
+        3px 3px 0 black;
+}
+
+.site-info-container {
+    width: 90vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    margin-top: 20vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    left: 0;
+
+}
+
+.header-container h2 {
+    text-align: center;
+    background-color: black;
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.left-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+}
+
+.right-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.info-header {
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    width: 90vw;
+}
+
+.info-img {
+    max-width: 800px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.info-img:hover {
+    transform: scale(1.2);
+    border-color: yellow;
+    border-width: 10px;
+
+}
+
+p {
+    font-size: 5em;
+    background-color: black;
+}
+
+h2 {
+    font-size: 6em;
+    text-align: center;
+    color: white
+}
+
+h1 {
+    text-align: center;
+    font-size: 10em;
+    font-family: homepage;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(20px);
+    }
+
+    40%,
+    100% {
+        transform: translateY(20px);
+    }
+}

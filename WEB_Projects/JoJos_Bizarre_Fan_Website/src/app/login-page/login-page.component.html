@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="background-image"></div> <!-- div for the background image -->
+  <div class="login-container">
+    @if(this.loginService.newAccountCreatedthisSession){
+      <h1 id="login-heading">Use your new credentials to sign in</h1>
+    }@else{
+      <h1 id="login-heading">Login to Continue</h1>
+    }
+    <form [formGroup]="loginInfo" (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <mat-label for="username"> Username </mat-label>
+        <input matInput id="username" type="text" formControlName="formUsername" />
+        <br />
+        @if (loginInfo.get("formUsername")?.hasError("required")) {
+        <mat-error>Enter your username</mat-error>
+        }
+
+        @if(userNameDoesNotExist){
+        <mat-error>
+          User name not found...
+        </mat-error>
+        }
+      </mat-form-field>
+      <br />
+      <mat-form-field>
+        <mat-label for="password"> Password </mat-label>
+        <input matInput type="password" formControlName="formPassword" />
+        <br />
+        @if (loginInfo.get("formPassword")?.hasError("required")) {
+        <mat-error>Enter your password </mat-error>
+        }
+      </mat-form-field>
+      <br />
+      <br />
+      <button mat-raised-button type="submit" [disabled]="loginInfo.invalid">Log In</button> |
+      <button mat-raised-button type="reset" [disabled]="loginInfo.invalid">Reset</button>
+      <br />
+    </form>
+    @if(shouldAskAboutAccount){
+      <br>
+      <p id="create-account-prompt">Don't have an account?.<br><br>Please
+        <a routerLink="/create" class="button"> CLICK HERE</a>
+        to create a new account</p>
+    }@else{
+      <p>Or<a routerLink="/create" class="button"> CLICK HERE</a>
+        to create a new account</p>
+    }
+  </div>
+  <div>
+  </div>
+</div>
+<div id="cursor" class="cursor" [style.top]="top" [style.left]="left" >
+  <img class="cursor-img" src="../../assets/cursor/jojos_2.png" alt=""></div>
+  

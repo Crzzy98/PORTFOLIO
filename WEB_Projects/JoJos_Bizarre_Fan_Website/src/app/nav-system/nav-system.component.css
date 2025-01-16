@@ -1,0 +1,360 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ .cursor-img {
+   justify-content: center;
+   width: 200px;
+   height: 200px;
+   /* cursor: url("../../assets/cursor/j_cursor.png"); */
+ }
+.container{
+  cursor: none;
+}
+ #cursor {
+   position: fixed;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   cursor: url("../../assets/cursor/str_plat_2.png"), auto;
+ }
+
+ /* Navbar styles */
+ .navbar {
+   background-color: black;
+   /* Dark purple background */
+   color: #ffd700;
+   /* Yellow text color */
+   display: flex;
+   justify-content: center;
+   /* Align items to the ends (left and right) */
+   align-items: center;
+   padding: 10px 20px;
+   /* Padding for top and bottom */
+   width: 100vw;
+   min-height: 100px;
+   /* Full width of parent container */
+   box-sizing: border-box;
+   /* Include padding in the width calculation */
+   position: fixed;
+   z-index: 1;
+   font-family: homepage;
+ }
+
+ .navbar h2 {
+   margin-right: auto;
+   /* Pushes the h1 to the left */
+   min-height: 100%;
+   display: flex;
+   align-items: center;
+   font-family: cursive;
+   line-height: 1;
+   /* Set line height to 1 to almost fill the height */
+ }
+
+ .navbar ul {
+   list-style-type: none;
+   display: flex;
+   align-items: center;
+   /* Vertically center the content */
+   left: 0;
+ }
+
+ .nav-img {
+   margin-right: 20px;
+   /* Spacing between links */
+   transition: transform 0.2s ease-in-out;
+   /* Add transition for smooth effect */
+   /* background-color: black; */
+   font-size: 50px;
+   animation: pulsate 2s ease-in-out infinite;
+   /* Adjust the duration as needed */
+ }
+
+ .nav-img:hover {
+   transform: scale(1.5);
+   /* Enlarge the list item on hover */
+   border-color: yellow;
+   border-width: 10px;
+
+ }
+
+ .navbar img:focus-visible {
+   outline: 2px solid yellow;
+ }
+
+ .navbar a {
+   text-decoration: none;
+   color: #ffd700;
+   /* Yellow text color for links */
+ }
+
+ .navbar img {
+   max-width: 100%;
+   height: 100px;
+   margin: 0;
+ }
+
+ .logo {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-content: center;
+   margin-right: 5vw;
+   margin-left: 5vw;
+   font-size: 2em;
+ }
+
+ .logo img {
+   align-content: center;
+   transition: transform 0.2s ease-in-out;
+   animation: pulsate 2s ease-in-out infinite;
+   /* Adjust the duration as needed */
+ }
+
+ .login-status {
+   display: flex;
+   flex-direction: row;
+   background-color: rgb(68, 80, 68);
+   position: fixed;
+   left: 0;
+   justify-content: center;
+   align-content: center;
+   /* Adjust if needed to avoid overlapping other content */
+   z-index: 1;
+   /* Ensures the container stays beneath the content */
+   margin-top: 100px;
+   height: 25px;
+   padding-left: 2px;
+   padding-top: 2px;
+ }
+
+ .login-status h4 {
+   color: rgb(16, 244, 16);
+   padding-right: 5px;
+ }
+
+ .login-status img {
+   width: 15%;
+   /* Make the image 50% as big as its container */
+   height: auto;
+   /* Maintain the aspect ratio */
+   padding-bottom: 2px;
+ }
+
+ .wavy-text {
+   position: relative;
+   margin-top: 20px;
+   display: flex
+ }
+
+ .logo-letter {
+   font-size: 1.5em;
+   position: relative;
+   display: inline-block;
+   text-transform: uppercase;
+   animation: animate 1s ease-in-out infinite;
+   animation-delay: calc(0.1s * var(--i));
+ }
+
+ @keyframes animate {
+   0% {
+     transform: translateY(0px);
+   }
+
+   20% {
+     transform: translateY(20px);
+   }
+
+   40%,
+   100% {
+     transform: translateY(20px);
+   }
+ }
+
+ @keyframes pulsate {
+   0% {
+     filter: brightness(90%);
+   }
+
+   50% {
+     filter: brightness(300%);
+   }
+
+   100% {
+     filter: brightness(50%);
+   }
+ }
+
+ /* Start of Media Queries  */
+ @media screen and (max-width: 2950px) {
+   .navbar {
+     background-color: black;
+     /* Dark purple background */
+     color: #ffd700;
+     /* Yellow text color */
+     display: flex;
+     justify-content: center;
+     /* Align items to the ends (left and right) */
+     align-items: center;
+     padding: 10px 20px;
+     /* Padding for top and bottom */
+     padding-left: 0;
+     max-width: 100vw;
+     min-height: 100px;
+     /* Full width of parent container */
+     box-sizing: border-box;
+     /* Include padding in the width calculation */
+     position: fixed;
+     z-index: 1;
+   }
+
+   .logo {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-content: center;
+     margin-right: 2vw;
+     margin-left: 2vw;
+   }
+
+   .logo img {
+     align-content: center;
+     margin-top: 60px;
+   }
+
+   .navbar ul {
+     list-style-type: none;
+     display: flex;
+     align-items: center;
+     max-width: 2500px;
+     margin-right: 50px;
+   }
+
+   .navbar li {
+     margin-right: 100px;
+     /* Spacing between links */
+     transition: transform 0.2s ease-in-out;
+     /* Add transition for smooth effect */
+     background-color: black;
+     font-size: 50px;
+   }
+
+   .nav-img {
+     max-width: 20px;
+     height: auto;
+     margin-right: 10px;
+   }
+
+   .wavy-text {
+     margin-top: 60px;
+   }
+
+   .logo-letter {
+     font-size: .8em;
+     position: relative;
+     display: inline-block;
+     text-transform: uppercase;
+     animation: animate 1s ease-in-out infinite;
+     animation-delay: calc(0.1s * var(--i));
+   }
+ }
+
+ /* end of query @ 2630px */
+
+ /* Query to transform navbar to "left-side" mode  */
+ @media screen and (max-width: 1700px) {
+   .navbar {
+     justify-content: flex-start;
+     /* Align items to the start (left side) */
+     align-items: flex-start;
+     /* Align items to the start (top) */
+     flex-direction: column;
+     /* Stack elements in a column */
+     padding: 10px;
+     /* Adjust padding as needed */
+     min-height: 100vh;
+     /* Remove fixed height */
+     width: 450px;
+     padding-left: 0px;
+
+   }
+
+   .navbar ul {
+     margin: 10px 0;
+     /* Add margin between list items */
+     margin-right: 0;
+     padding-left: 0;
+     flex-direction: column;
+     max-width: 475px;
+   }
+
+   .navbar a {
+     margin-right: 0;
+     /* Remove right margin for list items */
+     margin-left: 0;
+     /* Remove right margin for list items */
+     margin-bottom: 370px;
+     /* Add bottom margin for list items */
+   }
+
+   .nav-img {
+     max-width: 100%;
+     /* Adjust image width to fit container */
+     height: auto;
+     /* Maintain aspect ratio */
+     margin-right: 0;
+     /* Remove right margin for images */
+     margin-bottom: 10px;
+     /* Add bottom margin for images */
+   }
+
+   .logo {
+     margin-right: 0;
+     /* Remove right margin for logo */
+     margin-left: 0;
+     /* Remove left margin for logo */
+     flex-direction: column;
+     max-width: 450px;
+     margin-bottom: 250px
+   }
+
+   .login-status {
+     margin-top: 450px;
+     /* Adjust margin top for login status */
+     position: fixed;
+     bottom: 0;
+     left: 0;
+   }
+
+   .wavy-text {
+     margin-top: 20px;
+     /* Adjust margin top for wavy text */
+     display: flex;
+     flex-direction: column;
+   }
+
+   .wavy-text div {
+     font-size: 1em;
+     /* Adjust font size for wavy text */
+   }
+ }
+
+
+ /* Start Media queries for login status */
+ @media screen and (max-width: 2900px) {
+   .login-status {
+     margin-top: 140px;
+   }
+ }
+
+ @media screen and (max-width: 2630px) {
+   .login-status {
+     margin-top: 238px;
+   }
+ }

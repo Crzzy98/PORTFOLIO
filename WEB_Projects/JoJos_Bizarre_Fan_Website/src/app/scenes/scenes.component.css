@@ -1,0 +1,130 @@
+.scene-page-container{
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("../../assets/misc/scenes_wall_1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: homepage;
+
+}
+#cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  cursor: url("../../assets/cursor/str_plat_2.png"), auto;
+  pointer-events: none;
+}
+
+.cursor-img {
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  /* cursor: url("../../assets/cursor/j_cursor.png"); */
+  pointer-events: none;
+}
+.scenes-container{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width:100vw
+  }
+  swiper-container {
+      height: 70vh;
+      margin: 0;
+      width:60vw;
+      background-color: black;
+
+  }
+  swiper-slide{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../assets/misc/scenes_wall_3.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  youtube-player{
+    width:80vw;
+    height: 40vh;
+    margin-left: 5vw;
+  }
+  .character-image {
+      display: block;
+      margin: 0 auto; /* Centers the image horizontally */
+      width: 25vw;
+      height:70vh
+    }
+    .left-pointing-josuke{
+      height:20vh;
+      justify-content: center;
+      transform: scaleX(-1);
+    }
+    .pointing-image{
+      justify-content: center;
+      align-content: center;
+      padding-right: 1vw;
+      padding-left: 1vw;
+      width:400px;
+      background-color: black;
+    }
+    .scene-creator-div{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+      height:20vh;
+      justify-content: center;
+    }
+    .no-scenes{
+      text-align: center;
+      justify-content: center;
+      padding-left: 13vw;
+    }
+    h1 {
+      text-align:center;
+      color: yellow;
+      font-size: 5em;
+      background-color: black;
+    }
+    h2{
+      color: yellow;
+      font-size: 3em;
+    }
+    p {
+      font-size: 100px; /* Sets the text size to 200 pixels */
+      color: yellow; /* Sets the text color to yellow */
+      text-align: center; /* Centers the text horizontally */
+      font-family: 'Pacifico', cursive;
+  }
+  li{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    display: flex;
+    line-height: 1.5em
+  }
+  .video-btn{
+    width:500px;
+    font-size: 3em;
+    margin-left: 25vw;
+  }
+  .scene-add-btn{
+    margin-left: 45vw;
+    width:500px;
+    font-size: 5em;
+    margin-top: 2vh;
+  }
+  input{
+    justify-content: center;
+    height: 100px;
+    width: 50vw;
+    font-size: 3em;
+    margin-left: 25vw;
+  }
+ 
